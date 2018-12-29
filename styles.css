@@ -1,0 +1,48 @@
+img {
+    max-width: 100%;
+}
+
+/*Style.css*/
+
+/*Browser reset*/
+* {
+    margin: 0;
+    padding: 0;
+}
+
+/*Container*/
+/*
+.container {
+    max-width: 740px;
+    margin: 0 auto;
+    background-color: #ccc;
+    padding: 1em;
+}*/
+
+
+
+
+
+/*Navigationsmenuen*/
+nav {
+    display: none;
+    flex-direction: column;
+    position: fixed;
+    top: 50px;
+    left: 0;
+    background-color: darkgrey;
+    z-index: 2;
+    width: 100%;
+    text-align: center;
+}
+
+.logo,
+.burgerknap,
+.mainnav li {
+    padding: 1em;
+    background-color: darkgrey;
+}
+
+h2 {
+    margin-bottom: 1em;
+}

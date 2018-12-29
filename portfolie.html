@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+
+    <!-- NAVIGATION -->
+    <main class="container">
+
+        <div class="burgerknap">Menu</div>
+
+        <nav>
+            <div class="mainnav">
+                <ul>
+
+                    <a href="home.html" onclick="closeNav()">Om Mig</a>
+                    <br>
+                    <a href="portfolie.html" onclick="closeNav()">Portfolie</a>
+
+
+
+                </ul>
+            </div>
+        </nav>
+    </main>
+
+    <script>
+        var burgerknap = document.querySelector('.burgerknap');
+        var mobilmenu = document.querySelector('nav');
+        burgerknap.addEventListener("click", function() {
+            if (mobilmenu.style.display == 'none' || mobilmenu.style.display == '') {
+                mobilmenu.style.display = 'flex';
+            } else {
+                mobilmenu.style.display = 'none';
+            }
+        });
+
+    </script>
+
+
+
+    <!--
+
+    /****************************** Forside ******************************/
+-->
+
+
+    <img src="kaktussplash.jpg" alt=forside>
+
+
+
+    <h1>Mit portfolie</h1>
+
+
+    <!-- Hvorfor virker det ikke?
+    <header>
+        <nav>
+            <a href="#tema1">Tema 1</a>
+            <a href="#tema2">Tema 2</a>
+            <a href="#tema3">Tema 3</a>
+            <a href="#tema4">Tema 4</a>
+        </nav>
+    </header>
+-->
+
+
+</body>
+
+</html>

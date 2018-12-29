@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="da">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+
+
+
+    <!-- NAVIGATION -->
+    <main class="container">
+
+        <div class="burgerknap">Menu</div>
+
+        <nav>
+            <div class="mainnav">
+                <ul>
+
+                    <a href="home.html" onclick="closeNav()">Om Mig</a>
+                    <br>
+                    <a href="portfolie.html" onclick="closeNav()">Portfolie</a>
+
+
+
+                </ul>
+            </div>
+        </nav>
+    </main>
+
+    <script>
+        var burgerknap = document.querySelector('.burgerknap');
+        var mobilmenu = document.querySelector('nav');
+        burgerknap.addEventListener("click", function() {
+            if (mobilmenu.style.display == 'none' || mobilmenu.style.display == '') {
+                mobilmenu.style.display = 'flex';
+            } else {
+                mobilmenu.style.display = 'none';
+            }
+        });
+    </script>
+
+
+
+
+
+
+
+
+
+    <!--
+
+    /****************************** Forside ******************************/
+-->
+
+
+    <img src="kaktussplash.jpg" alt=forside>
+
+    <!--
+
+
+    /****************************** Om Mig ******************************/
+-->
+
+    <h1>Om mig</h1>
+
+    <p>
+
+        Jeg er en multimediedesign studerende der elsker .... blah blah
+
+        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?" </p>
+
+
+</body>
+
+</html>
