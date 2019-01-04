@@ -5,6 +5,8 @@
 
 }
 
+
+
 img {
     max-width: 100%;
 
@@ -49,7 +51,6 @@ h2,
 h3,
 h4,
 h5,
-footer,
     {
     font-family: Baskerville;
     margin: 2rem;
@@ -59,9 +60,35 @@ footer,
 
 
 footer {
-    font-size: 15px;
+    display: flex;
+    margin: 30px;
+    flex-wrap: wrap;
+    justify-content: center;
 
 }
+
+.info text {
+    font-family: Baskerville;
+}
+
+#socialemedier {
+    display: flex;
+    justify-content: center;
+}
+
+.social {
+    width: 1.5em;
+    height: 1.5em;
+    margin-right: 10px;
+
+}
+
+#socialemedier img {
+    border-radius: 50%;
+}
+
+
+
 
 
 /*PORTFOLIE SIDEN*/
@@ -107,6 +134,7 @@ footer {
 
 
 
+
 }
 
 #menu {
@@ -115,10 +143,17 @@ footer {
     transform-origin: top left;
 
 
+
+}
+
+header {
+    position: relative;
 }
 
 nav {
     position: fixed;
+
+
 
 }
 
@@ -135,6 +170,8 @@ a {
     height: 6em;
     justify-content: center;
     position: fixed;
+    z-index: 5;
+    position: absolute;
 
 }
 
