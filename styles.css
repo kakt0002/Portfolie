@@ -1,5 +1,13 @@
+.columnhome img {
+    max-width: 85%;
+    border-radius: 50%;
+    margin-left: 2rem;
+
+}
+
 img {
     max-width: 100%;
+
 }
 
 
@@ -9,34 +17,50 @@ img {
 }
 
 
+p {
+    margin: 2rem;
+
+
+
+}
+
 h2 {
     margin-bottom: 1em;
     font-size: 1rem;
-
-}
-
-h2 {
     align-content: center;
+    text-align: center;
+
 }
 
 
 
+h1 {
+    text-align: center;
+    font-family: baskerville;
+}
 
+.containerheader text {
+    font-family: baskerville;
+    font-size: 2rem;
+    text-align: center;
+}
 
-h1,
 h2,
 h3,
 h4,
 h5,
 footer,
-p {
-    font-family: Athelas;
+    {
+    font-family: Baskerville;
     margin: 2rem;
+    text-align: center;
 
 }
 
+
 footer {
     font-size: 15px;
+
 }
 
 
@@ -51,19 +75,19 @@ footer {
     width: 40vh;
     height: 40vh;
     margin: 13px;
-    background-color: mistyrose;
+    background-color: lightcyan;
     text-align: center;
     font-size: 1em;
     flex-basis: 40vh;
     flex-grow: 1;
     box-shadow: 5px 7px #D3D3D3;
-    ;
+
 
 
 }
 
 .box:hover {
-    color: sandybrown;
+    color: rosybrown;
 }
 
 
@@ -104,5 +128,97 @@ a {
 
     color: black;
 }
+
+.containerheader {
+    background-color: powderblue;
+    width: 100%;
+    height: 6em;
+    justify-content: center;
+    position: fixed;
+
+}
+
+
+.sectionwrapperhome {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 7vw;
+
+}
+
+.columnhome {
+    flex-grow: 2;
+    flex-basis: 600px;
+
+
+}
+
+figcaption {
+    text-align: center;
+}
+
+.linkbox {
+    display: flex;
+    width: 15vh;
+    height: 5vh;
+    margin: auto;
+    background-color: lightcyan;
+    box-shadow: 3px 5px #D3D3D3;
+    font-size: 1rem;
+    justify-content: center;
+}
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    margin-left: 5rem;
+}
+
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 80%;
+    width: 80%;
+    position: absolute;
+}
+
+
+.boxredesign {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 20vh;
+    height: 15vh;
+    margin: 13px;
+    background-color: lightcyan;
+    text-align: center;
+    font-size: 1em;
+    flex-basis: 40vh;
+    flex-grow: 1;
+    box-shadow: 5px 7px #D3D3D3;
+
+
+}
+
+object {
+    width: 100%;
+    height: 300vw;
+    display: block;
+}
+
+.video {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    margin-left: 5rem;
+}
+
+.video {
+    width: 100%;
+    height: auto;
 
 }
