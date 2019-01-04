@@ -9,52 +9,24 @@
 </head>
 
 <body>
-
-
-
-    <!-- NAVIGATION -->
-    <main class="container">
-
-        <div class="burgerknap">Menu</div>
-
+    <header>
         <nav>
-            <div class="mainnav">
-                <ul>
-
-                    <a href="home.html" onclick="closeNav()">Om Mig</a>
-                    <br>
-                    <a href="portfolie.html" onclick="closeNav()">Portfolie</a>
+            <div id="menuknap">☰</div>
+            <ul id="menu" class="hidden">
+                <li><a href="home.html">Forside</a></li>
+                <li><a href="portfolie.html">Portfolie</a></li>
 
 
+            </ul>
 
-                </ul>
-            </div>
         </nav>
-    </main>
 
-    <script>
-        var burgerknap = document.querySelector('.burgerknap');
-        var mobilmenu = document.querySelector('nav');
-        burgerknap.addEventListener("click", function() {
-            if (mobilmenu.style.display == 'none' || mobilmenu.style.display == '') {
-                mobilmenu.style.display = 'flex';
-            } else {
-                mobilmenu.style.display = 'none';
-            }
-        });
-    </script>
-
-
-
-
-
-
-
+    </header>
 
 
     <!--
 
-    /****************************** Forside ******************************/
+    /*********************** Forside ******************************/
 -->
 
 
@@ -63,18 +35,24 @@
     <!--
 
 
-    /****************************** Om Mig ******************************/
+    /****************************** Om Mig ************************/
 -->
 
     <h1>Om mig</h1>
 
     <p>
 
-        Jeg er en multimediedesign studerende der elsker .... blah blah
+        Jeg er en multimediedesign studerende der ....
 
-        "Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?" </p>
+        Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni
+
+
+        <br>
+
+        dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur? </p>
 
 
 </body>
+<script src="script.js"></script>
 
 </html>
