@@ -34,18 +34,26 @@ h2 {
     text-align: center;
     font-weight: 200;
 }
-}
+
 
 h6 {
-    font-family: baskerville;
+    font-family: Baskerville;
+    font-size: 1.5rem;
+    font-weight: 100;
+}
+
+h5 {
+    font-family: Baskerville;
     font-size: 1.5rem;
     font-weight: 100;
 }
 
 
+
 h1 {
     text-align: center;
     font-family: baskerville;
+
 }
 
 
@@ -151,10 +159,11 @@ footer {
 .containerheader text {
     font-family: Brush Script MT;
     font-size: 2rem;
-    margin-left: 32vw;
+    margin: 44vw;
     position: relative;
 
 }
+
 
 #menu {
     list-style-type: none;
@@ -193,6 +202,7 @@ a {
     position: fixed;
 
 
+
 }
 
 
@@ -219,13 +229,17 @@ figcaption {
 
 .linkbox {
     display: flex;
-    width: 15vh;
-    height: 5vh;
+    width: 20vh;
+    height: 10vh;
     margin: auto;
     background-color: lightcyan;
     box-shadow: 3px 5px #D3D3D3;
     font-size: 1rem;
-    justify-content: center;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 5vh;
 }
 
 .video-responsive {
@@ -328,8 +342,8 @@ object {
     animation-timing-function: steps(4);
     background-image: url(animation/pige_gr%C3%A6dende_animation.svg);
     background-size: 400% 100%;
-    width: 30vw;
-    height: 30vw;
+    width: 20vw;
+    height: 20vw;
     top: 25vw;
     left: 5vw;
 
@@ -479,11 +493,122 @@ footer {
     border-radius: 10px;
     display: flex;
     justify-content: center;
-    f
+
 }
 
 #boksetema4 {
     display: flex;
     flex-wrap: wrap;
     align-content: center;
+}
+
+
+
+
+
+
+#tema1 .sectionwrapper {
+
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em;
+
+
+}
+
+
+#tema1 .column_wide {
+    display: flex;
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-basis: 400px;
+}
+
+
+#tema1 .colors {
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-basis: 400px;
+}
+
+#tema1 .content {
+    flex-wrap: nowrap;
+    flex-grow: 1;
+    flex-basis: 400px;
+    margin: 3em;
+}
+
+
+#tema1 .column_narrow {
+
+    flex-grow: 2;
+    flex-basis: 400px;
+
+
+}
+
+
+.colors div {
+    width: 100px;
+    height: 100px;
+    Border: 1px black solid;
+}
+
+.color1 {
+    background-color: #d50982;
+}
+
+.color2 {
+    background-color: #45c0f7;
+}
+
+.color3 {
+    background-color: #9b00fe;
+}
+
+.color4 {
+    background-color: #a1d443;
+}
+
+.color5 {
+    background-color: #fef200;
+}
+
+.underline {
+    width: 350px;
+    Border: 3px black solid;
+    border-radius: 30%;
+    display: flex;
+    margin: auto;
+
+
+
+}
+
+
+
+#sexogsamfund .sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em;
+
+
+}
+
+
+#sexogsamfund .column_animation {
+    display: flex;
+    flex-wrap: nowrap;
+
+    flex-basis: 400px;
+}
+
+
+
+#sexogsamfund .column_text {
+
+    flex-grow: 2;
+    flex-basis: 400px;
+
+
 }
