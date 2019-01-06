@@ -10,8 +10,6 @@
 
 img {
     max-width: 100%;
-
-
 }
 
 * {
@@ -58,6 +56,8 @@ h1 {
 
 
 
+
+
 h2,
 h3,
 h4,
@@ -90,6 +90,7 @@ footer {
 #socialemedier {
     display: flex;
     justify-content: center;
+    flex-wrap: wrap;
 }
 
 .social {
@@ -109,8 +110,20 @@ footer {
 
 }
 
+.info {
+    display: flex;
+    justify-content: center;
+    flex-basis: 5;
+
+}
 
 
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
 /*PORTFOLIE SIDEN*/
 
@@ -151,7 +164,6 @@ footer {
 }
 
 #menuknap {
-    display: inline-block;
     font-size: 2rem;
 
 }
@@ -166,9 +178,8 @@ footer {
 
 
 #menu {
-    list-style-type: none;
-    transition: transform 1s;
-    transform-origin: top left;
+    + transition: transform 1s;
+    transform-origin: top right;
     background-color: lightgray;
     width: 5rem;
 }
@@ -177,12 +188,12 @@ footer {
     color: rosybrown;
 }
 
-header {
-    position: relative;
-}
+
+
 
 nav {
     position: fixed;
+
 
 
 
@@ -200,8 +211,6 @@ a {
     width: 100%;
     height: 3em;
     position: fixed;
-
-
 
 }
 
@@ -222,6 +231,15 @@ a {
 
 }
 */
+
+.columns {
+    background-color: white;
+}
+
+
+
+
+
 
 figcaption {
     text-align: center;
@@ -248,7 +266,9 @@ figcaption {
     position: relative;
     height: 0;
     margin-left: 5rem;
+
 }
+
 
 .video-responsive iframe {
     left: 0;
@@ -257,6 +277,8 @@ figcaption {
     width: 80%;
     position: absolute;
 }
+
+
 
 
 .boxvidere {
@@ -284,19 +306,16 @@ object {
     display: block;
 }
 
-.video {
+video {
     overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-    margin-left: 5rem;
-}
-
-.video {
     width: 100%;
-    height: auto;
-
+    margin: 10vw;
+    height: 80%;
+    width: 80%;
+    position: relative;
 }
+
+
 
 
 /************ Skildpadde animation********/
@@ -362,20 +381,50 @@ object {
 }
 
 
+/*************************FORSIDE***************/
 
+#kaktussprite {
+    animation: kaktus_sprite;
+    animation-duration: 3s;
+    animation-iteration-count: infinite;
+    animation-timing-function: steps(8);
+    background-image: url(kaktus_sprite.svg);
+    background-size: 700% 100%;
+    width: 40vw;
+    height: 40vw;
+    top: 25vw;
+    left: 5vw;
 
-#spilherknap {
-
-    background-image: url(animation/Artboard%203.svg);
-    height: 100%;
-    width: 100%;
-
+    z-index: 10;
 }
 
 
+@keyframes kaktus_sprite {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -400%;
+    }
+}
 
 
+#sectionwrapper {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em;
+}
 
+.column {
+    flex-grow: 2;
+    flex-basis: 600px;
+}
+
+
+.column img {
+    font-size: 3em;
+}
 
 
 
@@ -424,6 +473,8 @@ object {
 }
 
 
+
+
 .proto {
     display: flex;
     flex-direction: column;
@@ -460,8 +511,8 @@ textarea {
     /* Add a top margin */
     margin-bottom: 16px;
     /* Bottom margin */
-    resize: vertical
-        /* Allow the user to vertically resize the textarea (not horizontally) */
+    resize: vertical;
+    /* Allow the user to vertically resize the textarea (not horizontally) */
 }
 
 .container {
@@ -484,6 +535,7 @@ textarea {
     max-width: 80%;
 }
 
+/*
 footer {
     width: 100vw;
     height: 15vw;
@@ -495,6 +547,20 @@ footer {
     justify-content: center;
 
 }
+*/
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    height: 5%;
+    position: fixed;
+}
 
 #boksetema4 {
     display: flex;
@@ -503,7 +569,22 @@ footer {
 }
 
 
+#pilot {
 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 50%;
+    height: 50%;
+    margin: 13px;
+    background-color: lightgrey;
+    font-size: 1em;
+    flex-basis: 40vh;
+    flex-grow: 1;
+    margin-left: 25vw;
+
+
+}
 
 
 
@@ -611,4 +692,75 @@ footer {
     flex-basis: 400px;
 
 
+}
+
+
+li {
+    display: inline;
+    left: 30vw;
+}
+
+li {
+    float: left;
+
+}
+
+.deskmenu a {
+    display: block;
+    padding: 9px;
+    background-color: #dddddd;
+    border: 1px black solid;
+    margin: 2px;
+}
+
+.mobilmenu a {
+
+    background-color: #dddddd;
+
+
+}
+
+hide {
+    display: block;
+}
+
+@media only screen and (max-width: 600px) {
+    .deskmenu {
+        display: none;
+
+    }
+
+    .mobilmenu {
+
+        display: block;
+    }
+}
+
+@media only screen and (min-width: 600px) {
+    .deskmenu {
+        display: block;
+
+    }
+
+    .mobilmenu {
+
+
+        display: none;
+    }
+}
+
+
+@media only screen and (max-width: 600px) {
+    .containerheader text {
+        font-family: Brush Script MT;
+        font-size: 2rem;
+        margin: 30vw;
+        position: relative;
+
+    }
+
+    .mobilmenu {
+        top: -1vw;
+
+    }
 }
