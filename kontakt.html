@@ -23,14 +23,14 @@
     <header>
 
         <div class="containerheader">
-            <text>Kaktus Høy</text>
+            <h1>Kaktus Høy</h1>
             <nav class="mobilmenu" class="hide">
                 <div id="menuknap">☰
                 </div>
                 <br>
                 <ul id="menu" class="hidden">
                     <li><a href="forside.html">Forside</a></li>
-                    <li><a href="home.html">Om mig</a></li>
+                    <li><a href="ommig.html">Om mig</a></li>
 
                     <li><a href="portfolie.html">Portfolie</a></li>
 
@@ -39,7 +39,7 @@
             </nav>
         </div>
 
-        <nav class="deskmenu" class="hide">
+        <nav class="deskmenu hide">
             <ul>
                 <li><a href="forside.html">Forside</a></li>
                 <li><a href="home.html">Om mig</a></li>
@@ -51,37 +51,39 @@
 
 
     </header>
-    <br> <br> <br><br>
-    <h1>Interesseret i at arbejde sammen?</h1>
-    <h2>Kontakt mig via nedenstående formular. Jeg glæder mig til at høre fra dig!</h2>
-    <div class="rowkontakt">
-        <div class="kontaktbillede">
-            <img src="migkontakt%202.jpg" alt=forside></div>
+    <section id="kontakt">
+        <h1>Interesseret i at arbejde sammen?</h1>
+        <h2>Kontakt mig via nedenstående formular. Jeg glæder mig til at høre fra dig!</h2>
+        <div class="rowkontakt">
+            <div class="kontaktbillede">
+                <img src="migkontakt%202.jpg" alt=forside></div>
 
-        <div class="container">
-            <form action="action_page.php">
+            <div class="container">
+                <form action="sendt.html">
 
-                <label for="fname">Fornavn:</label>
-                <input type="text" id="fname" name="firstname" placeholder="Dit fornavn...">
-                <br>
-                <label for="lname">Efternavn:</label>
-                <input type="text" id="lname" name="lastname" placeholder="Dit efternavn...">
-                <br>
-                <label for="country">Land:</label>
-                <select id="country" name="country">
-                    <option value="australia">Danmark</option>
-                    <option value="canada">Sverige</option>
-                    <option value="usa">USA</option>
-                </select>
-                <br>
-                <label for="subject">Emne:</label>
-                <textarea id="subject" name="subject" placeholder="Skriv noget..." style="height:200px"></textarea>
+                    <label for="fname">Fornavn:</label>
+                    <input type="text" id="fname" name="firstname" placeholder="Dit fornavn...">
+                    <br>
+                    <label for="lname">Efternavn:</label>
+                    <input type="text" id="lname" name="lastname" placeholder="Dit efternavn...">
+                    <br>
+                    <label for="country">Land:</label>
+                    <select id="country" name="country">
+                        <option value="australia">Danmark</option>
+                        <option value="canada">Sverige</option>
+                        <option value="usa">USA</option>
+                    </select>
+                    <br>
+                    <label for="subject">Emne:</label>
+                    <textarea id="subject" name="subject" placeholder="Skriv noget..." style="height:200px"></textarea>
 
-                <input type="submit" value="Send">
+                    <input type="submit" value="Send">
 
-            </form>
+
+                </form>
+            </div>
         </div>
-    </div>
+    </section>
 
 
     <footer>
@@ -105,12 +107,12 @@
         </div>
         <div class="info">
 
-            <text>Kaktus Høy Bendtsen | Kaktus@jhoy.dk</text>
+            <p>Kaktus Høy Bendtsen | Kaktus@jhoy.dk</p>
         </div>
     </footer>
-
+    <script src="script.js"></script>
 </body>
 
-<script src="script.js"></script>
+
 
 </html>

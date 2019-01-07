@@ -1,11 +1,4 @@
-/*
-.columnhome img {
-    max-width: 85%;
-    border-radius: 50%;
-    margin-left: 2rem;
-
-}
-*/
+/**********GENERELLE INDSTILLINGER*******/
 
 
 img {
@@ -17,13 +10,64 @@ img {
     padding: 0;
 }
 
+li {
+    display: inline;
+    left: 30vw;
+}
 
-p {
-    margin: 2rem;
-
-
+li {
+    float: left;
 
 }
+
+
+
+hide {
+    display: block;
+}
+
+/*
+p {
+    font-family: Baskerville;
+    font-size: 1.2em;
+}
+*/
+
+.linkbox {
+    display: flex;
+    width: 20vh;
+    height: 10vh;
+    margin: auto;
+    background-color: lightcyan;
+    box-shadow: 3px 5px #D3D3D3;
+    font-size: 1rem;
+    flex-direction: column;
+    justify-content: space-evenly;
+    text-align: center;
+    font-size: 1em;
+    margin-top: 5vh;
+    margin-bottom: 8vh;
+}
+
+
+
+.underline {
+    width: 350px;
+    Border: 3px black solid;
+    border-radius: 30%;
+    display: flex;
+    margin: auto;
+}
+
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
+
+
 
 h2 {
     margin-bottom: 1em;
@@ -31,6 +75,7 @@ h2 {
     align-content: center;
     text-align: center;
     font-weight: 200;
+    font-family: Baskerville;
 }
 
 
@@ -51,81 +96,15 @@ h5 {
 h1 {
     text-align: center;
     font-family: baskerville;
-
 }
 
 
-
-
-
-h2,
-h3,
-h4,
-h5,
-    {
+h2 h3 h4 h5 {
     font-family: Baskerville;
     margin: 2rem;
     text-align: center;
 
 }
-
-
-/*
-footer {
-    display: flex;
-
-    flex-wrap: wrap;
-    justify-content: center;
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-}
-*/
-
-.info text {
-    font-family: Baskerville;
-}
-
-#socialemedier {
-    display: flex;
-    justify-content: center;
-    flex-wrap: wrap;
-}
-
-.social {
-    width: 1.5em;
-    height: 1.5em;
-    margin-right: 10px;
-
-}
-
-#socialemedier img {
-    border-radius: 50%;
-}
-
-.spilbillede img {
-    max-width: 75%;
-    margin: 10vw;
-
-}
-
-.info {
-    display: flex;
-    justify-content: center;
-    flex-basis: 5;
-
-}
-
-
-.center {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
-
-/*PORTFOLIE SIDEN*/
 
 .box {
     /* dette er standard-indstillingerne */
@@ -143,8 +122,6 @@ footer {
     flex-grow: 1;
     box-shadow: 5px 7px #D3D3D3;
 
-
-
 }
 
 .box:hover {
@@ -156,29 +133,32 @@ footer {
 #bokse {
     display: flex;
     flex-wrap: wrap;
+    margin-bottom: 8vw;
 }
 
+/************************************MENUEN/HEADER**************************************/
 
 .hidden {
     transform: scale(0);
 }
+
 
 #menuknap {
     font-size: 2rem;
 
 }
 
-.containerheader text {
+.containerheader h1 {
     font-family: Brush Script MT;
     font-size: 2rem;
-    margin: 44vw;
     position: relative;
+
 
 }
 
 
 #menu {
-    + transition: transform 1s;
+    transition: transform 1s;
     transform-origin: top right;
     background-color: lightgray;
     width: 5rem;
@@ -200,6 +180,8 @@ nav {
 }
 
 
+
+
 a {
     text-decoration: none;
 
@@ -212,190 +194,40 @@ a {
     height: 3em;
     position: fixed;
 
-}
-
-
-.sectionwrapperhome {
-
-    display: flex;
-    flex-wrap: wrap;
-    margin: 7vw;
 
 }
 
-/*
-.columnhome {
-    flex-grow: 2;
-    flex-basis: 600px;
-
-
-}
-*/
-
-.columns {
-    background-color: white;
-}
-
-
-
-
-
-
-figcaption {
-    text-align: center;
-}
-
-.linkbox {
-    display: flex;
-    width: 20vh;
-    height: 10vh;
-    margin: auto;
-    background-color: lightcyan;
-    box-shadow: 3px 5px #D3D3D3;
-    font-size: 1rem;
-    flex-direction: column;
-    justify-content: space-evenly;
-    text-align: center;
-    font-size: 1em;
-    margin-top: 5vh;
-}
-
-.video-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-    margin-left: 5rem;
-
-}
-
-
-.video-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 80%;
-    width: 80%;
-    position: absolute;
-}
-
-
-
-
-.boxvidere {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 20vh;
-    height: 15vh;
-    margin: 13px;
-    background-color: lightcyan;
-    text-align: center;
-    font-size: 1em;
-    flex-basis: 40vh;
-    flex-grow: 1;
-    box-shadow: 5px 7px #D3D3D3;
-}
-
-.boxvidere:hover {
-    color: rosybrown;
-}
-
-object {
-    width: 100%;
-    height: 300vw;
+.deskmenu a {
     display: block;
+    padding: 9px;
+    background-color: #dddddd;
+    border: 1px black solid;
+    margin: 2px;
 }
 
-video {
-    overflow: hidden;
-    width: 100%;
-    margin: 10vw;
-    height: 80%;
-    width: 80%;
-    position: relative;
-}
+.mobilmenu a {
 
+    background-color: #dddddd;
 
-
-
-/************ Skildpadde animation********/
-
-
-
-#skildpadde {
-    width: 20vw;
-    height: 20vw;
-    background-image: url(animation/Skildpaddeh%C3%B8jre.svg);
-    background-size: 100%;
-    background-repeat: no-repeat;
-    top: 30vw;
 
 }
-
-.skildpaddegaa {
-    animation-name: skildpaddegaa;
-    animation-duration: 4s;
-    animation-timing-function: linear;
-    animation-fill-mode: both;
-    transform-origin: 15% 100%;
-
-}
-
-@keyframes skildpaddegaa {
-    0% {
-        transform: translateX(0vw);
-    }
-
-    100% {
-        transform: translateX(60vw);
-    }
-}
-
-
-/************ Pige animation********/
-
-#pigetrist {
-    animation: pige_graedende_animation;
-    animation-duration: 2s;
-    animation-iteration-count: 50;
-    animation-timing-function: steps(4);
-    background-image: url(animation/pige_gr%C3%A6dende_animation.svg);
-    background-size: 400% 100%;
-    width: 20vw;
-    height: 20vw;
-    top: 25vw;
-    left: 5vw;
-
-    z-index: 10;
-}
-
-
-@keyframes pige_graedende_animation {
-    0% {
-        background-position: 0 0;
-    }
-
-    100% {
-        background-position: -400%;
-    }
-}
-
 
 /*************************FORSIDE***************/
 
+
+
 #kaktussprite {
     animation: kaktus_sprite;
-    animation-duration: 3s;
+    animation-duration: 2s;
     animation-iteration-count: infinite;
     animation-timing-function: steps(8);
     background-image: url(kaktus_sprite.svg);
-    background-size: 700% 100%;
+    background-size: 600% 100%;
     width: 40vw;
     height: 40vw;
     top: 25vw;
     left: 5vw;
-
-    z-index: 10;
+    z-index: -1;
 }
 
 
@@ -405,7 +237,7 @@ video {
     }
 
     100% {
-        background-position: -400%;
+        background-position: -800%;
     }
 }
 
@@ -414,11 +246,13 @@ video {
     display: flex;
     flex-wrap: wrap;
     margin: 2em;
+    margin-top: 0px;
 }
 
 .column {
     flex-grow: 2;
     flex-basis: 600px;
+    margin-top: 60px;
 }
 
 
@@ -426,165 +260,75 @@ video {
     font-size: 3em;
 }
 
+/***********************************************OM MIG SIDE *************************************/
 
 
-/*PRØVE PÅ SCROLLING*/
-.scroll {
-    /* The image used */
-    background-image: url("selvpotraet.jpg");
+.sectionwrapperhome {
 
-    /* Set a specific height */
-    height: 50%;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 7vw;
+    margin-top: 10px;
 
-    /* Create the parallax scrolling effect */
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
 }
+
+
+.columnhome {
+    margin-top: 30px;
+}
+
+
 
 .columns {
-    display: flex;
-    flex-wrap: wrap;
-
-    margin: 2em;
-
+    background-color: white;
 }
 
-.column {
-    flex-grow: 2;
-    flex-basis: 400px;
-}
 
-/*Virker ikke?*/
-/*
-@media only screen and (max-device-width: 1366px) {
-    .scroll {
-        background-attachment: scroll;
+
+@keyframes bouncing {
+    0% {
+        bottom: 0;
+    }
+
+    50% {
+        bottom: 1vw;
+    }
+
+    100% {
+        bottom: 0;
     }
 }
-*/
 
+.pil {
+    animation: bouncing 1s infinite ease-in-out;
+    display: block;
+    height: 50px;
+    position: absolute;
+    width: 50px;
+    left: 80vw;
+    margin-bottom: -35vw;
 
-#protobilleder {
-    display: flex;
-    flex-wrap: wrap;
+    z-index: -1;
+}
 
+.pilhop {
+    position: relative;
 }
 
 
-
-
-.proto {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 40vh;
-    height: 40vh;
-    margin: 13px;
-    flex-basis: 40vh;
-    flex-grow: 1;
-
+.sectionwrapperhome h5 {
+    font-family: Baskerville;
+    font-size: 1.2em;
 }
 
-#protobilleder img {
-    height: 30vw;
-    margin: 30px;
-    margin-left: 30px;
+/************************************PORTOFLIE FORSIDE**************************************/
 
+
+#portfolie h1 {
+    padding-top: 60px;
 }
 
-input[type=text],
-select,
-textarea {
-    width: 100%;
-    /* Full width */
-    padding: 12px;
-    /* Some padding */
-    border: 1px solid #ccc;
-    /* Gray border */
-    border-radius: 4px;
-    /* Rounded borders */
-    box-sizing: border-box;
-    /* Make sure that padding and width stays in place */
-    margin-top: 6px;
-    /* Add a top margin */
-    margin-bottom: 16px;
-    /* Bottom margin */
-    resize: vertical;
-    /* Allow the user to vertically resize the textarea (not horizontally) */
-}
-
-.container {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    font-size: 1em;
-    flex-basis: 40vh;
-    flex-grow: 1;
-}
-
-.rowkontakt {
-    display: flex;
-    flex-wrap: wrap;
-    margin: 3vw;
-}
-
-
-.kontaktbillede img {
-    max-width: 80%;
-}
-
-/*
-footer {
-    width: 100vw;
-    height: 15vw;
-    margin-top: 10%;
-    text-align: center;
-    line-height: 15vw;
-    border-radius: 10px;
-    display: flex;
-    justify-content: center;
-
-}
-*/
-
-footer {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
-    align-items: center;
-    left: 0;
-    bottom: 0;
-    width: 100%;
-    background-color: lightgray;
-    height: 5%;
-    position: fixed;
-}
-
-#boksetema4 {
-    display: flex;
-    flex-wrap: wrap;
-    align-content: center;
-}
-
-
-#pilot {
-
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 50%;
-    height: 50%;
-    margin: 13px;
-    background-color: lightgrey;
-    font-size: 1em;
-    flex-basis: 40vh;
-    flex-grow: 1;
-    margin-left: 25vw;
-
-
-}
+/************************************TEMA 1 INDSTILLINGER**************************************/
 
 
 
@@ -593,7 +337,6 @@ footer {
     display: flex;
     flex-wrap: wrap;
     margin: 2em;
-
 
 }
 
@@ -628,6 +371,20 @@ footer {
 
 }
 
+#tema1 .column_pictures {
+
+    display: flex;
+    flex-direction: row;
+}
+
+
+#tema1 h3 {
+    margin: 2vw;
+}
+
+#tema1 h1 {
+    padding-top: 60px;
+}
 
 .colors div {
     width: 100px;
@@ -655,74 +412,651 @@ footer {
     background-color: #fef200;
 }
 
-.underline {
-    width: 350px;
-    Border: 3px black solid;
-    border-radius: 30%;
-    display: flex;
-    margin: auto;
 
+/***********************************************TEMA 2 PILOTOPGAVE INDSTILLINGER**********************************************/
+
+
+#tema2 h1 {
+    padding-top: 60px;
+}
+
+#pilotopgave h1 {
+    padding-top: 60px;
+}
+
+#pilotopgave p {
+    margin-left: 10vw;
+    margin-right: 10vw;
+    margin-bottom: 5vw;
+    margin-top: 3vw;
+
+    margin-left: 22vw;
+    margin-right: 10vw;
+
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    padding: 3vw;
+    width: 50%;
+    height: 50%;
+
+    font-size: 1em;
+}
+
+.video-responsive {
+    overflow: hidden;
+    padding-bottom: 56.25%;
+    position: relative;
+    height: 0;
+    margin-left: 10rem;
+}
+
+
+.video-responsive iframe {
+    left: 0;
+    top: 0;
+    height: 80%;
+    width: 80%;
+    position: absolute;
+    border: 0px;
+}
+
+
+
+/***********************************************TEMA 2 REDESIGN TOBIAS STRØM INDSTILLINGER*************************************/
+
+#redesign p {
+    margin-left: 22vw;
+    margin-right: 10vw;
+    margin-bottom: 5vw;
+    margin-top: 3vw;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    padding: 3vw;
+    width: 50%;
+    height: 50%;
+    font-size: 1em;
+}
+
+#redesign h1 {
+    padding-top: 60px;
+}
+
+#stroembillede {
+    padding-bottom: 50px;
+}
+
+
+
+
+/*********************************************** *************************************/
+
+
+
+
+
+
+.boxvidere {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 20vh;
+    height: 15vh;
+    margin: 13px;
+    background-color: lightcyan;
+    text-align: center;
+    font-size: 1em;
+    flex-basis: 40vh;
+    flex-grow: 1;
+    box-shadow: 5px 7px #D3D3D3;
+}
+
+.boxvidere:hover {
+    color: rosybrown;
+}
+
+object {
+    width: 100%;
+    height: 300vw;
+    display: block;
+}
+
+/****************VIRKSOMHEDSVIDEO AFSNIT *************/
+
+
+#virksomhedsvideo h1 {
+    padding-top: 60px;
+}
+
+video {
+    overflow: hidden;
+    width: 100%;
+    height: 80%;
+    width: 80%;
+    position: relative;
+    margin-left: 10vw;
+}
+
+
+#virksomhedsvideo p {
+    margin-left: 22vw;
+    margin-right: 10vw;
+    margin-bottom: 5vw;
+    margin-top: 3vw;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    padding: 3vw;
+    width: 50%;
+    height: 50%;
+
+    font-size: 1em;
+
+}
+
+
+
+/************ ANIMATION AFSNIT ********/
+
+
+#tema3 h1 {
+    padding-top: 60px;
+}
+
+
+#skildpadde {
+    width: 20vw;
+    height: 20vw;
+    background-image: url(animation/Skildpaddeh%C3%B8jre.svg);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    top: 3vw;
+    position: relative;
+    z-index: -1;
 
 
 }
 
+.skildpaddegaa {
+    animation-name: skildpaddegaa;
+    animation-duration: 4s;
+    animation-timing-function: linear;
+    animation-fill-mode: both;
+    transform-origin: 15% 100%;
+
+}
+
+@keyframes skildpaddegaa {
+    0% {
+        transform: translateX(0vw);
+    }
+
+    100% {
+        transform: translateX(60vw);
+    }
+}
+
+#animation p {
+    margin-left: 22vw;
+    margin-right: 10vw;
+    margin-bottom: 15px;
+    margin-top: 17px;
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    padding: 3vw;
+    width: 50%;
+    height: 50%;
+    font-size: 1em;
+
+}
+
+
+#animation h1 {
+    padding-top: 60px;
+}
+
+
+
+/************ SEX OG SAMFUND AFSNIT ********/
+
+#pigetrist {
+    animation: pige_graedende_animation;
+    animation-duration: 2s;
+    animation-iteration-count: 50;
+    animation-timing-function: steps(4);
+    background-image: url(animation/pige_gr%C3%A6dende_animation.svg);
+    background-size: 400% 100%;
+    width: 30vw;
+    height: 30vw;
+    margin-left: 10vw;
+
+}
+
+
+@keyframes pige_graedende_animation {
+    0% {
+        background-position: 0 0;
+    }
+
+    100% {
+        background-position: -400%;
+    }
+}
+
+
+.spilbillede img {
+    max-width: 75%;
+    /*
+    margin-left: 10vw;
+    margin-bottom: 2vw;
+    margin-top: 2vw;
+*/
+
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
 
 
 #sexogsamfund .sectionwrapper {
     display: flex;
     flex-wrap: wrap;
+
+}
+
+#sexogsamfund .column {
+    flex-grow: 3;
+    flex-basis: 900px;
+
+
+}
+
+.text {
+    flex-grow: 1;
+    flex-basis: 400px;
+    margin: 0.6em 0.6em;
+
+}
+
+.image {
+    flex-grow: 1;
+    flex-basis: 400PX;
+
+}
+
+
+
+#sexogsamfund .top {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    flex-direction: row-reverse;
+    margin: 2em;
+    margin-right: 3em;
+
+
+
+}
+
+#sexogsamfund .bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 2em;
+    margin-right: 3em;
+
+
+
+}
+
+#sexogsamfund p {
+
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    padding: 3vw;
+
+
+    font-size: 1em;
+
+}
+
+
+#sexogsamfund h1 {
+    padding-top: 60px;
+}
+
+
+
+
+
+/*PRØVE PÅ SCROLLING*/
+
+.scroll {
+    /*     The image used */
+    background-image: url("selvpotraet.jpg");
+
+    /*     Set a specific height */
+    min-height: 45vw;
+    width: 70vw;
+
+    /*    Create the parallax scrolling effect*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    z-index: -1;
+    margin-left: 7vw;
+}
+
+
+.scroll2 {
+    /*     The image used */
+    background-image: url("2.jpg");
+
+    /*    Create the parallax scrolling effect*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 45vw;
+    width: 100%;
+    z-index: -1;
+
+
+}
+
+
+
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+
     margin: 2em;
 
-
 }
 
-
-#sexogsamfund .column_animation {
-    display: flex;
-    flex-wrap: nowrap;
-
-    flex-basis: 400px;
-}
-
-
-
-#sexogsamfund .column_text {
-
+.column {
     flex-grow: 2;
     flex-basis: 400px;
-
-
 }
 
 
-li {
-    display: inline;
-    left: 30vw;
+
+
+
+
+
+/***********TEMA 4: DESIGN SPRINT*******/
+
+#tema4 h1 {
+    padding-top: 60px;
 }
 
-li {
-    float: left;
 
+#boksetema4 {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
 }
 
-.deskmenu a {
+
+#designsprint img {
     display: block;
-    padding: 9px;
-    background-color: #dddddd;
-    border: 1px black solid;
-    margin: 2px;
-}
-
-.mobilmenu a {
-
-    background-color: #dddddd;
+    margin-left: auto;
+    margin-right: auto;
 
 
 }
 
-hide {
+.designtxt {
+
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    padding: 3vw;
+    margin-left: 10vw;
+    margin-right: 7vw;
+
+    font-size: 1em;
+}
+
+
+#protobilleder {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.proto {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 40vh;
+    height: 40vh;
+    margin: 13px;
+    flex-basis: 40vh;
+    flex-grow: 1;
+
+}
+
+
+#protobilleder img {
+    height: 30vw;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+
+
+}
+
+#designsprint h1 {
+    padding-top: 70px;
+}
+
+
+/*********** WEB PROTOTYPE*******/
+
+#webproto h1 {
+    padding-top: 60px;
+}
+
+
+#webprotobilleder {
+    display: flex;
+    flex-wrap: wrap;
+    padding-bottom: 20px;
+}
+
+
+#webprotobilleder img {
+    width: 50%;
+    height: 50%;
     display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
 }
+
+#webproto p {
+
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    padding: 3vw;
+    margin-left: 10vw;
+    margin-right: 7vw;
+
+    font-size: 1em;
+}
+
+/*********** KEAT PROTOTYPE*******/
+
+
+#keat h1 {
+    padding-top: 60px;
+    margin-bottom: 30px;
+}
+
+.underline {
+    margin-bottom: 30px;
+}
+
+#keatbilleder {
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+
+#keatbilleder img {
+    width: 50%;
+    height: 50%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+
+
+}
+
+#keattxt p {
+
+    border: 1px solid black;
+    display: flex;
+    justify-content: center;
+    padding: 3vw;
+    margin-left: 10vw;
+    margin-right: 7vw;
+
+    font-size: 1em;
+}
+
+
+/************KONTAKT SIDE FORMULAR STYLING********************/
+
+input[type=text],
+select,
+textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical;
+    /* Giver lov til at ændre text feltet lodret */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    font-size: 1em;
+    flex-basis: 40vh;
+    flex-grow: 1;
+}
+
+.rowkontakt {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 3vw;
+}
+
+
+.kontaktbillede img {
+    max-width: 80%;
+}
+
+#kontakt h1 {
+    padding-top: 70px;
+
+
+
+}
+
+#kontakt {
+    margin-bottom: 100px;
+}
+
+
+#tak h1 {
+    padding-top: 100px;
+}
+
+/*************************FOOTER INDSTILLINGER***************************************/
+
+#socialemedier {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    flex-basis: 900px;
+}
+
+.social {
+    width: 1em;
+    height: 1em;
+    margin-right: 10px;
+
+}
+
+#socialemedier img {
+    border-radius: 50%;
+}
+
+footer {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background-color: lightgray;
+    height: 3.3%;
+    position: fixed;
+    padding: 1vw;
+    opacity: 0.9;
+}
+
+.info {
+    display: flex;
+    justify-content: center;
+    flex-basis: 900px;
+    font-family: Baskerville;
+    font-size: 12px;
+
+
+}
+
+/*DENNE GØR STATIC SCROLLING PÅ OM MIG SIDE NORMAL IGEN VED MOBILE */
+@media only screen and (max-width: 600px) {
+    .scroll {
+        background-attachment: scroll;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .scroll2 {
+        background-attachment: scroll;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .pil {
+        display: none;
+    }
+}
+
+/***************MEDIA QUIERIES TIL MENUERNE************* */
 
 @media only screen and (max-width: 600px) {
     .deskmenu {
