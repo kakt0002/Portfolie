@@ -913,6 +913,7 @@ textarea {
     justify-content: center;
     flex-wrap: wrap;
     flex-basis: 900px;
+    margin-bottom: 1vw;
 }
 
 .social {
@@ -924,7 +925,10 @@ textarea {
 
 #socialemedier img {
     border-radius: 50%;
+
 }
+
+
 
 footer {
     display: flex;
@@ -938,6 +942,7 @@ footer {
     height: 5%;
     position: fixed;
     opacity: 0.9;
+
 }
 
 .info {
@@ -946,6 +951,7 @@ footer {
     flex-basis: 900px;
     font-family: Baskerville;
     font-size: 12px;
+    margin-bottom: 1vw;
 
 
 }
