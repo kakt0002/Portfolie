@@ -14,13 +14,12 @@ img {
 
 li {
     display: inline;
-    left: 30vw;
-}
-
-li {
     float: left;
+    left: 30vw;
 
 }
+
+
 
 .boxvidere {
     display: flex;
@@ -286,6 +285,10 @@ a {
     margin-bottom: 50px;
 }
 
+.columnhome h1 {
+    margin-top: 5vw
+}
+
 
 
 .columns {
@@ -380,6 +383,100 @@ a {
     flex-grow: 2;
     flex-basis: 400px;
 }
+
+
+.ommig li {
+    list-style-type: circle black;
+
+
+
+}
+
+.ommig h3 {
+    font-size: 1.5rem;
+}
+
+.ommig p {
+    font-family: baskerville;
+    font-size: 1.5rem;
+}
+
+.ommig h1 {
+    margin: 5vw;
+}
+
+
+.ikoner {
+    display: flex;
+    flex-wrap: wrap;
+}
+
+
+.row1 {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em;
+    margin-right: 3em;
+}
+
+
+.row2 {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em;
+    margin-right: 3em;
+}
+
+.row3 {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em;
+    margin-right: 3em;
+}
+
+.row4 {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em;
+    margin-right: 3em;
+}
+
+.row5 {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em;
+    margin-right: 3em;
+}
+
+.row6 {
+    flex-grow: 1;
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em;
+    margin-right: 3em;
+}
+
+
+
+.img {
+    flex-grow: 1;
+    flex-basis: 300px;
+
+}
+
+.txt {
+    flex-grow: 1;
+    flex-basis: 300px;
+    text-align: center;
+    margin-top: 15vw;
+    font-family: baskerville;
+}
+
 
 
 /************************************PORTOFLIE FORSIDE**************************************/
@@ -502,7 +599,7 @@ a {
 
 
 .video-responsive {
-    margin-left: 10vw;
+    margin-left: 15vw;
     margin-bottom: 10vw;
     border: 0px;
 }
@@ -734,7 +831,7 @@ video {
 #boksetema4 {
     display: flex;
     flex-wrap: wrap;
-    align-content: center;
+    margin-bottom: 8vw;
 }
 
 
