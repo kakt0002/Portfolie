@@ -15,7 +15,7 @@ function toggleMenu() {
 
     if (erSkjult == true) {
 
-        //menuen er nu skjult - ændr menuknap til lll
+        //menuen er nu skjult - ændr menuknap til burger
         document.querySelector("#menuknap").textContent = "☰";
     } else {
         //menuen er nu vist - ændr menuknap til x

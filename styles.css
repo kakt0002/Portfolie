@@ -8,7 +8,9 @@ img {
 * {
     margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
+
 
 li {
     display: inline;
@@ -20,18 +22,36 @@ li {
 
 }
 
+.boxvidere {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    width: 20vh;
+    height: 15vh;
+    margin: 13px;
+    background-color: lightcyan;
+    text-align: center;
+    font-size: 1em;
+    flex-basis: 400px;
+    flex-grow: 1;
+    box-shadow: 5px 7px #D3D3D3;
+}
+
+.boxvidere:hover {
+    color: rosybrown;
+}
+
+object {
+    width: 100%;
+    height: 300vw;
+    display: block;
+}
 
 
 hide {
     display: block;
 }
 
-/*
-p {
-    font-family: Baskerville;
-    font-size: 1.2em;
-}
-*/
 
 .linkbox {
     display: flex;
@@ -47,6 +67,7 @@ p {
     font-size: 1em;
     margin-top: 5vh;
     margin-bottom: 8vh;
+    font-family: baskerville;
 }
 
 
@@ -71,7 +92,7 @@ p {
 
 h2 {
     margin-bottom: 1em;
-    font-size: 1rem;
+    font-size: 1.2rem;
     align-content: center;
     text-align: center;
     font-weight: 200;
@@ -99,12 +120,7 @@ h1 {
 }
 
 
-h2 h3 h4 h5 {
-    font-family: Baskerville;
-    margin: 2rem;
-    text-align: center;
 
-}
 
 .box {
     /* dette er standard-indstillingerne */
@@ -158,10 +174,12 @@ h2 h3 h4 h5 {
 
 
 #menu {
-    transition: transform 1s;
-    transform-origin: top right;
+    transition: transform 1.5s;
+    transform-origin: top left;
     background-color: lightgray;
-    width: 5rem;
+    width: 6rem;
+
+
 }
 
 #menu a:hover {
@@ -169,22 +187,13 @@ h2 h3 h4 h5 {
 }
 
 
-
-
 nav {
     position: fixed;
-
-
-
-
 }
-
-
 
 
 a {
     text-decoration: none;
-
     color: black;
 }
 
@@ -206,9 +215,8 @@ a {
 }
 
 .mobilmenu a {
-
+    font-size: 1.5rem;
     background-color: #dddddd;
-
 
 }
 
@@ -218,11 +226,11 @@ a {
 
 #kaktussprite {
     animation: kaktus_sprite;
-    animation-duration: 2s;
+    animation-duration: 1.5s;
     animation-iteration-count: infinite;
-    animation-timing-function: steps(8);
-    background-image: url(kaktus_sprite.svg);
-    background-size: 600% 100%;
+    animation-timing-function: steps(3);
+    background-image: url(blik_spriteGOD.svg);
+    background-size: 300% 100%;
     width: 40vw;
     height: 40vw;
     top: 25vw;
@@ -237,7 +245,7 @@ a {
     }
 
     100% {
-        background-position: -800%;
+        background-position: -300%;
     }
 }
 
@@ -257,7 +265,7 @@ a {
 
 
 .column img {
-    font-size: 3em;
+    max-width: 130%;
 }
 
 /***********************************************OM MIG SIDE *************************************/
@@ -274,7 +282,8 @@ a {
 
 
 .columnhome {
-    margin-top: 30px;
+    margin-top: 50px;
+    margin-bottom: 50px;
 }
 
 
@@ -321,6 +330,58 @@ a {
     font-size: 1.2em;
 }
 
+
+.scroll {
+    /*     The image used */
+    background-image: url("selvpotraet.jpg");
+
+    /*     Set a specific height */
+    min-height: 45vw;
+    width: 70vw;
+
+    /*    Create the parallax scrolling effect*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+
+    z-index: -1;
+    margin-left: 7vw;
+}
+
+
+.scroll2 {
+    /*     The image used */
+    background-image: url("2.jpg");
+
+    /*    Create the parallax scrolling effect*/
+    background-attachment: fixed;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    min-height: 45vw;
+    width: 100%;
+    z-index: -1;
+
+
+}
+
+.columns {
+    display: flex;
+    flex-wrap: wrap;
+
+    margin: 2em;
+
+}
+
+.column {
+    flex-grow: 2;
+    flex-basis: 400px;
+}
+
+
 /************************************PORTOFLIE FORSIDE**************************************/
 
 
@@ -337,49 +398,53 @@ a {
     display: flex;
     flex-wrap: wrap;
     margin: 2em;
+    margin-bottom: 10vw;
+
 
 }
 
 
-#tema1 .column_wide {
+#tema1 .column_narrow {
     display: flex;
-    flex-wrap: nowrap;
     flex-grow: 1;
+    /*Når jeg giver flex-grow 1, betyder det at flex elementerne vil fylde lige meget, så vidt muligt. Har så givet column wide 2, så den fylder mere*/
     flex-basis: 400px;
 }
 
 
 #tema1 .colors {
-    flex-wrap: nowrap;
-    flex-grow: 1;
-    flex-basis: 400px;
+    margin: 2vw;
 }
 
 #tema1 .content {
-    flex-wrap: nowrap;
-    flex-grow: 1;
-    flex-basis: 400px;
-    margin: 3em;
+
+    margin: 2vw;
+    border: 1px black solid;
+    padding: 3vw;
 }
 
 
-#tema1 .column_narrow {
-
+#tema1 .column_wide {
     flex-grow: 2;
     flex-basis: 400px;
-
+    font-family: Baskerville;
 
 }
+
+#tema1 .column_wide p {
+
+    font-family: Baskerville;
+    border: 1px black solid;
+    padding: 3vw;
+    margin: 2vw;
+}
+
 
 #tema1 .column_pictures {
 
     display: flex;
     flex-direction: row;
-}
 
-
-#tema1 h3 {
-    margin: 2vw;
 }
 
 #tema1 h1 {
@@ -425,57 +490,39 @@ a {
 }
 
 #pilotopgave p {
-    margin-left: 10vw;
-    margin-right: 10vw;
-    margin-bottom: 5vw;
-    margin-top: 3vw;
-
-    margin-left: 22vw;
-    margin-right: 10vw;
-
+    /*margin top, right, bottom og left*/
+    margin: 3vw 10vw 5vw 25vw;
     border: 1px solid black;
     display: flex;
-    justify-content: center;
     padding: 3vw;
-    width: 50%;
-    height: 50%;
-
+    width: 50vw;
     font-size: 1em;
+    font-family: baskerville;
 }
+
 
 .video-responsive {
-    overflow: hidden;
-    padding-bottom: 56.25%;
-    position: relative;
-    height: 0;
-    margin-left: 10rem;
-}
-
-
-.video-responsive iframe {
-    left: 0;
-    top: 0;
-    height: 80%;
-    width: 80%;
-    position: absolute;
+    margin-left: 10vw;
+    margin-bottom: 10vw;
     border: 0px;
 }
 
 
 
+
+
 /***********************************************TEMA 2 REDESIGN TOBIAS STRØM INDSTILLINGER*************************************/
 
+
+
 #redesign p {
-    margin-left: 22vw;
-    margin-right: 10vw;
-    margin-bottom: 5vw;
-    margin-top: 3vw;
+    /*margin top, right, bottom og left*/
+    margin: 3vw 10vw 5vw 25vw;
     border: 1px solid black;
-    display: flex;
     justify-content: center;
     padding: 3vw;
     width: 50%;
-    height: 50%;
+    font-family: baskerville;
     font-size: 1em;
 }
 
@@ -484,43 +531,11 @@ a {
 }
 
 #stroembillede {
-    padding-bottom: 50px;
+    padding-bottom: 60px;
 }
 
 
 
-
-/*********************************************** *************************************/
-
-
-
-
-
-
-.boxvidere {
-    display: flex;
-    flex-direction: column;
-    justify-content: space-evenly;
-    width: 20vh;
-    height: 15vh;
-    margin: 13px;
-    background-color: lightcyan;
-    text-align: center;
-    font-size: 1em;
-    flex-basis: 40vh;
-    flex-grow: 1;
-    box-shadow: 5px 7px #D3D3D3;
-}
-
-.boxvidere:hover {
-    color: rosybrown;
-}
-
-object {
-    width: 100%;
-    height: 300vw;
-    display: block;
-}
 
 /****************VIRKSOMHEDSVIDEO AFSNIT *************/
 
@@ -530,39 +545,37 @@ object {
 }
 
 video {
-    overflow: hidden;
-    width: 100%;
-    height: 80%;
-    width: 80%;
-    position: relative;
-    margin-left: 10vw;
+
+    width: 60%;
+    margin-left: 20vw;
 }
 
 
 #virksomhedsvideo p {
-    margin-left: 22vw;
-    margin-right: 10vw;
-    margin-bottom: 5vw;
-    margin-top: 3vw;
+    /*margin top, right, bottom og left*/
+    margin: 3vw 10vw 5vw 25vw;
     border: 1px solid black;
-    display: flex;
-    justify-content: center;
     padding: 3vw;
     width: 50%;
-    height: 50%;
-
+    font-family: baskerville;
     font-size: 1em;
 
 }
 
 
-
-/************ ANIMATION AFSNIT ********/
-
-
+/********ANIMATION*******/
 #tema3 h1 {
     padding-top: 60px;
 }
+
+.spilbillede img {
+    max-width: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+}
+
 
 
 #skildpadde {
@@ -574,6 +587,7 @@ video {
     top: 3vw;
     position: relative;
     z-index: -1;
+    animation-iteration-count: infinite;
 
 
 }
@@ -589,26 +603,22 @@ video {
 
 @keyframes skildpaddegaa {
     0% {
-        transform: translateX(0vw);
+        transform: translateX(-10vw);
     }
 
     100% {
-        transform: translateX(60vw);
+        transform: translateX(75vw);
     }
 }
 
 #animation p {
-    margin-left: 22vw;
-    margin-right: 10vw;
-    margin-bottom: 15px;
-    margin-top: 17px;
+    /*margin top, right, bottom og left*/
+    margin: 2vw 10vw 5vw 25vw;
     border: 1px solid black;
-    display: flex;
-    justify-content: center;
     padding: 3vw;
     width: 50%;
-    height: 50%;
     font-size: 1em;
+    font-family: baskerville;
 
 }
 
@@ -646,19 +656,6 @@ video {
 }
 
 
-.spilbillede img {
-    max-width: 75%;
-    /*
-    margin-left: 10vw;
-    margin-bottom: 2vw;
-    margin-top: 2vw;
-*/
-
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
-    width: 50%;
-}
 
 
 #sexogsamfund .sectionwrapper {
@@ -667,9 +664,9 @@ video {
 
 }
 
-#sexogsamfund .column {
-    flex-grow: 3;
-    flex-basis: 900px;
+#sexogsamfund .columnsamf {
+    flex-grow: 1;
+
 
 
 }
@@ -677,14 +674,14 @@ video {
 .text {
     flex-grow: 1;
     flex-basis: 400px;
-    margin: 0.6em 0.6em;
 
 }
 
-.image {
+.image img {
     flex-grow: 1;
-    flex-basis: 400PX;
-
+    flex-basis: 400px;
+    width: 50vw;
+    margin: 2vw;
 }
 
 
@@ -692,7 +689,6 @@ video {
 #sexogsamfund .top {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     flex-direction: row-reverse;
     margin: 2em;
     margin-right: 3em;
@@ -704,7 +700,6 @@ video {
 #sexogsamfund .bottom {
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
     margin: 2em;
     margin-right: 3em;
 
@@ -715,12 +710,10 @@ video {
 #sexogsamfund p {
 
     border: 1px solid black;
-    display: flex;
-    justify-content: center;
     padding: 3vw;
-
-
+    font-family: baskerville;
     font-size: 1em;
+    margin: 2vw;
 
 }
 
@@ -728,69 +721,6 @@ video {
 #sexogsamfund h1 {
     padding-top: 60px;
 }
-
-
-
-
-
-/*PRØVE PÅ SCROLLING*/
-
-.scroll {
-    /*     The image used */
-    background-image: url("selvpotraet.jpg");
-
-    /*     Set a specific height */
-    min-height: 45vw;
-    width: 70vw;
-
-    /*    Create the parallax scrolling effect*/
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-
-    z-index: -1;
-    margin-left: 7vw;
-}
-
-
-.scroll2 {
-    /*     The image used */
-    background-image: url("2.jpg");
-
-    /*    Create the parallax scrolling effect*/
-    background-attachment: fixed;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-    position: relative;
-    min-height: 45vw;
-    width: 100%;
-    z-index: -1;
-
-
-}
-
-
-
-
-.columns {
-    display: flex;
-    flex-wrap: wrap;
-
-    margin: 2em;
-
-}
-
-.column {
-    flex-grow: 2;
-    flex-basis: 400px;
-}
-
-
-
-
 
 
 
@@ -808,33 +738,28 @@ video {
 }
 
 
-#designsprint img {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
 
-
-}
 
 .designtxt {
 
     border: 1px solid black;
-    display: flex;
     justify-content: center;
     padding: 3vw;
     margin-left: 10vw;
     margin-right: 7vw;
-
     font-size: 1em;
+    font-family: baskerville;
 }
 
 
-#protobilleder {
+#designbilleder {
     display: flex;
     flex-wrap: wrap;
+    margin-left: 25vw;
 
 }
 
+/*
 .proto {
     display: flex;
     flex-direction: column;
@@ -846,13 +771,12 @@ video {
     flex-grow: 1;
 
 }
+*/
 
 
-#protobilleder img {
-    height: 30vw;
-    display: flex;
-    flex-wrap: wrap;
-    flex-direction: row;
+#designbilleder img {
+    max-height: 30vw;
+    max-width: 30vw;
 
 
 }
@@ -872,30 +796,23 @@ video {
 #webprotobilleder {
     display: flex;
     flex-wrap: wrap;
-    padding-bottom: 20px;
-}
-
-
-#webprotobilleder img {
     width: 50%;
     height: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-
-
 }
 
-#webproto p {
 
+#webproto p {
     border: 1px solid black;
-    display: flex;
     justify-content: center;
     padding: 3vw;
     margin-left: 10vw;
     margin-right: 7vw;
-
+    font-family: Baskerville;
     font-size: 1em;
+
 }
 
 /*********** KEAT PROTOTYPE*******/
@@ -904,6 +821,7 @@ video {
 #keat h1 {
     padding-top: 60px;
     margin-bottom: 30px;
+    font-family: baskerville;
 }
 
 .underline {
@@ -913,29 +831,23 @@ video {
 #keatbilleder {
     display: flex;
     flex-wrap: wrap;
-
-}
-
-
-#keatbilleder img {
     width: 50%;
     height: 50%;
     display: block;
     margin-left: auto;
     margin-right: auto;
-
-
 }
+
+
 
 #keattxt p {
 
     border: 1px solid black;
-    display: flex;
     justify-content: center;
     padding: 3vw;
     margin-left: 10vw;
     margin-right: 7vw;
-
+    font-family: baskerville;
     font-size: 1em;
 }
 
@@ -954,6 +866,7 @@ textarea {
     margin-bottom: 16px;
     resize: vertical;
     /* Giver lov til at ændre text feltet lodret */
+    font-family: baskerville;
 }
 
 .container {
@@ -963,6 +876,7 @@ textarea {
     font-size: 1em;
     flex-basis: 40vh;
     flex-grow: 1;
+    font-family: baskerville;
 }
 
 .rowkontakt {
@@ -1002,8 +916,8 @@ textarea {
 }
 
 .social {
-    width: 1em;
-    height: 1em;
+    width: 15px;
+    height: 5px;
     margin-right: 10px;
 
 }
@@ -1021,9 +935,8 @@ footer {
     bottom: 0;
     width: 100%;
     background-color: lightgray;
-    height: 3.3%;
+    height: 5%;
     position: fixed;
-    padding: 1vw;
     opacity: 0.9;
 }
 
@@ -1097,4 +1010,43 @@ footer {
         top: -1vw;
 
     }
+}
+
+@media only screen and (max-width: 600px) {
+    .column img {
+        display: none;
+    }
+
+    .columntxt {
+        display: block;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 600px) {
+    .column img {
+        display: block;
+
+    }
+
+    .columntxt {
+
+        display: none;
+    }
+
+
+}
+
+
+@media only screen and (min-width: 600px) {
+    .video-responsive {
+        width: 850px;
+        height: 500px;
+        margin-left: 20vw;
+        margin-bottom: 10vw;
+    }
+
+
 }
